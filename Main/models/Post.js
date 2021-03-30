@@ -24,13 +24,11 @@ Post.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    username_comment:{
+    username:{
       type: DataTypes.STRING,
-      allowNull: false,
     },
     user_comment: {
       type: DataTypes.STRING,
-      allowNull: false,
     },
     user_id: {
       type: DataTypes.INTEGER,
