@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, User } = require('../models');
+const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -16,7 +16,6 @@ router.get('/', async (req, res) => {
 
     // Serialize data so the template can read it
     const posts = postData.map((post) => post.get({ plain: true }));
-
     // Pass serialized data and session flag into template
     res.render('homepage', { 
       posts, 
@@ -35,11 +34,15 @@ router.get('/posts/:id', async (req, res) => {
           model: User,
           attributes: ['name'],
         },
+        {
+          model: Comment,
+          attributes: ['comment']
+        }
       ],
     });
 
     const post = postData.get({ plain: true });
-
+    
     res.render('post', {
       ...post,
       logged_in: req.session.logged_in
@@ -78,5 +81,7 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
+
 
 module.exports = router;
