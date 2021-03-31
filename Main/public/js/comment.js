@@ -1,6 +1,6 @@
 
     const newCommentHandler = async (event) => {
-      event.preventDefault();
+      // event.preventDefault();
     
       const comment = document.querySelector('#comment').value.trim();
       const path = window.location.pathname.split('/');

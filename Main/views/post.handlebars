@@ -2,15 +2,12 @@
   <h2>{{name}}</h2>
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>Comments</p>
-  {{comment.comment}}
-    {{#if comment.length}}
-  {{#each comment as |comment|}}
+  <p>Comments</p> 
+  {{#each comments as |comment|}}
   <div>
-    {{comment}}
+    {{comment.comment}} - {{comment.user.name}}
   </div> 
   {{/each}}
-  {{/if}}
   <form class="form new-comment-form">
       <div class="form-group">
         <label for="comment-desc">Comment:</label>
