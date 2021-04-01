@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Great+Vibes&display=swap');
+$Vibes: 'Great Vibes';
+$Assist: 'Assistant';
+$RoyalBlue: #0C1446;
+$Seafoam: #87ACA3;
+$Teal: #2B7C85;
+$TealG: #175873;
+$Orange: #E87A00;
+
+body {
+    background-color: $Seafoam;
+    color: $RoyalBlue;
+}
+nav {
+    background-color: $Teal;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./water.jpg");
+
+  /* Set a specific height */
+  height: 10em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 2em;
+  border-bottom: $TealG 2px solid;
+}
+.brand {
+    color: $Seafoam;
+    font-family: $Vibes;
+    font-size: 3em;
+    padding: 1em;
+}
+.brand:hover {
+    color: $TealG;
+}
+.pm {
+    color: $Seafoam;
+    font-family: $Assist;
+    padding: .25em;
+}
+.pm:hover {
+    color: $TealG;
+}
+.logout {
+    color: $Seafoam;
+    font-family: $Assist;
+    padding: .25em;
+}
+.logout:hover {
+    color: $TealG;
+}
+.login {
+    color: $Seafoam;
+    font-family: $Assist;
+    padding: .25em;
+}
+.login:hover {
+    color: $TealG;
+}
+a {
+    text-decoration: none;
+}
+.right {
+    float: right;
+    font-size: 1em;
+    padding-right: 1em;
+    padding-top: 5px;
+}
+.post {
+    background-color: $RoyalBlue;
+    border-radius: 15px;
+}
+.blogPost {
+    font-family: $Assist;
+    color: $Seafoam;
+    font-size: 1.25em;
+}
+.blogPost:hover {
+    color: $Orange;
+}
+.credit {
+    color: $Seafoam;
+}
+.form-group {
+    font-size: 1.5em;
+    padding: 1em;
+    align-content: center;
+}
+.blog {
+    font-size: 1.75em;
+}
+.button {
+    font-size: 1em;
+}

@@ -1,24 +1,106 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Great+Vibes&display=swap");
+body {
+  background-color: #87ACA3;
+  color: #0C1446;
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
+nav {
+  background-color: #2B7C85;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./water.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./water.jpg");
+  /* Set a specific height */
+  height: 10em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 2em;
+  border-bottom: #175873 2px solid;
+}
+
+.brand {
+  color: #87ACA3;
+  font-family: "Great Vibes";
+  font-size: 3em;
+  padding: 1em;
+}
+
+.brand:hover {
+  color: #175873;
+}
+
+.pm {
+  color: #87ACA3;
+  font-family: "Assistant";
+  padding: .25em;
+}
+
+.pm:hover {
+  color: #175873;
+}
+
+.logout {
+  color: #87ACA3;
+  font-family: "Assistant";
+  padding: .25em;
+}
+
+.logout:hover {
+  color: #175873;
+}
+
+.login {
+  color: #87ACA3;
+  font-family: "Assistant";
+  padding: .25em;
+}
+
+.login:hover {
+  color: #175873;
+}
+
+a {
   text-decoration: none;
-  font-size: 100%;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+.right {
+  float: right;
+  font-size: 1em;
+  padding-right: 1em;
+  padding-top: 5px;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+.post {
+  background-color: #0C1446;
+  border-radius: 15px;
 }
+
+.blogPost {
+  font-family: "Assistant";
+  color: #87ACA3;
+  font-size: 1.25em;
+}
+
+.blogPost:hover {
+  color: #E87A00;
+}
+
+.credit {
+  color: #87ACA3;
+}
+
+.form-group {
+  font-size: 1.5em;
+  padding: 1em;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.blog {
+  font-size: 1.75em;
+}
+
+.button {
+  font-size: 1em;
+}
+/*# sourceMappingURL=style.css.map */
