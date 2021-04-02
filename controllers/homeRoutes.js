@@ -42,9 +42,6 @@ router.get('/posts/:id', async (req, res) => {
     });
 
     const post = postData.get({ plain: true });
-    console.log(`-----------------------`);
-    console.log(post);
-    console.log(`-----------------------`);
 
     res.render('post', {
       ...post,
